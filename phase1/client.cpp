@@ -29,7 +29,7 @@ int main() {
     std::string comment;
     std::getline(std::cin, comment);
 
-    std::string request = "POST / HTTP/1.1\r\n";
+    std::string request = "POST /submit_comment HTTP/1.1\r\n";
     request += "Host: localhost:8080\r\n";
     request += "Content-Length: " + std::to_string(comment.length()) + "\r\n";
     request += "\r\n";
