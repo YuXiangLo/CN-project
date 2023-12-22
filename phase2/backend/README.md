@@ -3,7 +3,7 @@ In phase 1 project, we've demo a project using python to build a GET method for 
 
 I wrote some accounts and passwords to `account.csv`. \
 {Account: 'Linus', passwd: 'apple'} \
-{Account: 'apple', passwd: 'banana'} \
+{Account: 'apple', passwd: 'banana'} 
 
 Notice that the password is hashed in `account.csv`
 
