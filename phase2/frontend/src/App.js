@@ -4,6 +4,7 @@ import SearchContext from './SearchContext';
 import LoginForm from './LoginForm';
 import MainPage from './MainPage';
 import VideoPage from './VideoPage';
+import AudioPage from './AudioPage';
 import SearchBar from './SearchBar';
 import Cookies from 'js-cookie';
 
@@ -24,6 +25,7 @@ function AppWrapper() {
         <Route path="/" element={<LoginForm />} />
         <Route path="/main" element={<MainPage />} />
         <Route path="/video" element={<VideoPage />} />
+        <Route path="/audio" element={<AudioPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import MenuIcon from '@mui/icons-material/Menu';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import HomeIcon from '@mui/icons-material/Home';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import SearchContext from './SearchContext';
 
@@ -64,6 +65,10 @@ const SearchBar = ({ data, handleLogout, navigate }) => {
   	navigate('/video');
   }
 
+  const handleAudio = () => {
+  	navigate('/audio');
+  }
+
   const [anchorEl, setAnchorEl] = useState(null);
 
   const handleMenu = (event) => {
@@ -108,6 +113,9 @@ const SearchBar = ({ data, handleLogout, navigate }) => {
             </MenuItem>
             <MenuItem onClick={handleVideo}>
               <OndemandVideoIcon sx={{ marginRight: 1 }} /> Videos
+            </MenuItem>
+            <MenuItem onClick={handleAudio}>
+              <MusicNoteIcon sx={{ marginRight: 1 }} /> Audios
             </MenuItem>
             <MenuItem onClick={handleLogout}>
               <ExitToAppIcon sx={{ marginRight: 1 }} /> Logout
